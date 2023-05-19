@@ -1,0 +1,15 @@
+C:\Users\teresita\Desktop\proyecto mascota cs\ejemploArchivosYErrores\bin\Debug\net6.0\ejemploArchivosYErrores.exe
+C:\Users\teresita\Desktop\proyecto mascota cs\ejemploArchivosYErrores\bin\Debug\net6.0\ejemploArchivosYErrores.deps.json
+C:\Users\teresita\Desktop\proyecto mascota cs\ejemploArchivosYErrores\bin\Debug\net6.0\ejemploArchivosYErrores.runtimeconfig.json
+C:\Users\teresita\Desktop\proyecto mascota cs\ejemploArchivosYErrores\bin\Debug\net6.0\ejemploArchivosYErrores.dll
+C:\Users\teresita\Desktop\proyecto mascota cs\ejemploArchivosYErrores\bin\Debug\net6.0\ejemploArchivosYErrores.pdb
+C:\Users\teresita\Desktop\proyecto mascota cs\ejemploArchivosYErrores\obj\Debug\net6.0\ejemploArchivosYErrores.csproj.AssemblyReference.cache
+C:\Users\teresita\Desktop\proyecto mascota cs\ejemploArchivosYErrores\obj\Debug\net6.0\ejemploArchivosYErrores.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\teresita\Desktop\proyecto mascota cs\ejemploArchivosYErrores\obj\Debug\net6.0\ejemploArchivosYErrores.AssemblyInfoInputs.cache
+C:\Users\teresita\Desktop\proyecto mascota cs\ejemploArchivosYErrores\obj\Debug\net6.0\ejemploArchivosYErrores.AssemblyInfo.cs
+C:\Users\teresita\Desktop\proyecto mascota cs\ejemploArchivosYErrores\obj\Debug\net6.0\ejemploArchivosYErrores.csproj.CoreCompileInputs.cache
+C:\Users\teresita\Desktop\proyecto mascota cs\ejemploArchivosYErrores\obj\Debug\net6.0\ejemploArchivosYErrores.dll
+C:\Users\teresita\Desktop\proyecto mascota cs\ejemploArchivosYErrores\obj\Debug\net6.0\refint\ejemploArchivosYErrores.dll
+C:\Users\teresita\Desktop\proyecto mascota cs\ejemploArchivosYErrores\obj\Debug\net6.0\ejemploArchivosYErrores.pdb
+C:\Users\teresita\Desktop\proyecto mascota cs\ejemploArchivosYErrores\obj\Debug\net6.0\ejemploArchivosYErrores.genruntimeconfig.cache
+C:\Users\teresita\Desktop\proyecto mascota cs\ejemploArchivosYErrores\obj\Debug\net6.0\ref\ejemploArchivosYErrores.dll

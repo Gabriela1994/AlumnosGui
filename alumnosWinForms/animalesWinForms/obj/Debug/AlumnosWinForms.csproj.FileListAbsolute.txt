@@ -1,0 +1,12 @@
+C:\Users\teresita\Desktop\proyecto mascota cs\animalesWinForms\animalesWinForms\obj\Debug\AlumnosWinForms.csproj.AssemblyReference.cache
+C:\Users\teresita\Desktop\proyecto mascota cs\animalesWinForms\animalesWinForms\obj\Debug\AlumnosWinForms.csproj.SuggestedBindingRedirects.cache
+C:\Users\teresita\Desktop\proyecto mascota cs\animalesWinForms\animalesWinForms\obj\Debug\animalesWinForms.CargarAlumnos.resources
+C:\Users\teresita\Desktop\proyecto mascota cs\animalesWinForms\animalesWinForms\obj\Debug\animalesWinForms.Main.resources
+C:\Users\teresita\Desktop\proyecto mascota cs\animalesWinForms\animalesWinForms\obj\Debug\animalesWinForms.Properties.Resources.resources
+C:\Users\teresita\Desktop\proyecto mascota cs\animalesWinForms\animalesWinForms\obj\Debug\AlumnosWinForms.csproj.GenerateResource.cache
+C:\Users\teresita\Desktop\proyecto mascota cs\animalesWinForms\animalesWinForms\obj\Debug\AlumnosWinForms.csproj.CoreCompileInputs.cache
+C:\Users\teresita\Desktop\proyecto mascota cs\animalesWinForms\animalesWinForms\obj\Debug\animalesWinForms.exe
+C:\Users\teresita\Desktop\proyecto mascota cs\animalesWinForms\animalesWinForms\obj\Debug\animalesWinForms.pdb
+C:\Users\teresita\Desktop\proyecto mascota cs\animalesWinForms\animalesWinForms\bin\Debug\animalesWinForms.exe.config
+C:\Users\teresita\Desktop\proyecto mascota cs\animalesWinForms\animalesWinForms\bin\Debug\animalesWinForms.exe
+C:\Users\teresita\Desktop\proyecto mascota cs\animalesWinForms\animalesWinForms\bin\Debug\animalesWinForms.pdb
