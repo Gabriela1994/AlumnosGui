@@ -18,12 +18,16 @@ namespace animalesWinForms
         {
             if(alumno.Id == 0)
             {
-                //_accesoBd.InsertarAlumno();
+                _accesoBd.AgregarAlumno(alumno);
             }
             else
-            {
-                //_accesoBd.ActualizarAlumno();
-            }
+            _accesoBd.ActualizarAlumno(alumno);
+            return alumno;
+        }
+
+        public List<Alumnos> ObtenerListaDeAlumnos()
+        {
+            return _accesoBd.CargarListaDeAlumnos();
         }
     }
 }
