@@ -25,9 +25,14 @@ namespace animalesWinForms
             return alumno;
         }
 
-        public List<Alumnos> ObtenerListaDeAlumnos()
+        public List<Alumnos> ObtenerListaDeAlumnos(string buscarText = null)
         {
-            return _accesoBd.CargarListaDeAlumnos();
+            return _accesoBd.CargarListaDeAlumnos(buscarText);
+        }
+
+        public void BorrarAlumno(int Id)
+        {
+            _accesoBd.BorrarAlumno(Id);
         }
     }
 }

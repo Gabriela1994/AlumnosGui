@@ -29,27 +29,28 @@ namespace animalesWinForms
                 cargarAlumno.CargarInformacionDeAlumno(new Alumnos
                 {
                     Id = int.Parse((gridAnimales.Rows[e.RowIndex].Cells[0].Value.ToString())),
-                    Nombre = gridAnimales.Rows[e.RowIndex].Cells[1].Value.ToString(),
-                    Apellido = gridAnimales.Rows[e.RowIndex].Cells[2].Value.ToString(),
-                    Dni = gridAnimales.Rows[e.RowIndex].Cells[3].Value.ToString(),
-                    Provincia = gridAnimales.Rows[e.RowIndex].Cells[4].Value.ToString(),
-                    Ciudad = gridAnimales.Rows[e.RowIndex].Cells[5].Value.ToString(),
-                    Calle = gridAnimales.Rows[e.RowIndex].Cells[6].Value.ToString(),
-                    Numero_calle = gridAnimales.Rows[e.RowIndex].Cells[7].Value.ToString(),
+                    Dni = gridAnimales.Rows[e.RowIndex].Cells[1].Value.ToString(),
+                    Nombre = gridAnimales.Rows[e.RowIndex].Cells[2].Value.ToString(),
+                    Apellido = gridAnimales.Rows[e.RowIndex].Cells[3].Value.ToString(),
+                    Fecha_nacimiento = gridAnimales.Rows[e.RowIndex].Cells[4].Value.ToString(),
+                    Provincia = gridAnimales.Rows[e.RowIndex].Cells[5].Value.ToString(),
+                    Ciudad = gridAnimales.Rows[e.RowIndex].Cells[6].Value.ToString(),
+                    Calle = gridAnimales.Rows[e.RowIndex].Cells[7].Value.ToString(),
+                    Numero_calle = gridAnimales.Rows[e.RowIndex].Cells[8].Value.ToString(),
                 });
                 cargarAlumno.ShowDialog(this);
             }
+            else if(cell.Value.ToString() == "Eliminar")
+            {
+                BorrarAlumnos(int.Parse(gridAnimales.Rows[e.RowIndex].Cells[0].Value.ToString()));
+                VolcarInformacionDeAlumnos();
+            }
         }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void BorrarAlumnos(int Id)
         {
-
+            _logicaDeNegocio.BorrarAlumno(Id);
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -70,15 +71,29 @@ namespace animalesWinForms
             VolcarInformacionDeAlumnos();
         }
 
-        public void VolcarInformacionDeAlumnos()
+        public void VolcarInformacionDeAlumnos(string buscarText = null)
         {
             //obtiene la informacion
-            List<Alumnos> alumnos = _logicaDeNegocio.ObtenerListaDeAlumnos();
+            List<Alumnos> alumnos = _logicaDeNegocio.ObtenerListaDeAlumnos(buscarText);
 
             //la muestra en la grilla
             gridAnimales.DataSource = alumnos;
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnsearch_Click(object sender, EventArgs e)
+        {
+            VolcarInformacionDeAlumnos(TxtSearch.Text);
+            TxtSearch.Text = string.Empty;
+        }
     }
 }

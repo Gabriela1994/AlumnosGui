@@ -32,8 +32,9 @@ namespace animalesWinForms
                 SqlParameter fecha_nacimiento = new SqlParameter();
                 fecha_nacimiento.ParameterName = "@Fecha_nacimiento";
                 fecha_nacimiento.Value = alumno.Fecha_nacimiento;
-                fecha_nacimiento.DbType = System.Data.DbType.String;
-                
+                fecha_nacimiento.DbType = System.Data.DbType.DateTime2;
+
+
                 //los parametros los inserto en una lista dinamica
                 SqlCommand command = new SqlCommand(query, conexion);
                 command.Parameters.Add(nombre);
@@ -58,7 +59,7 @@ namespace animalesWinForms
             }
         }
 
-        public List<Alumnos> CargarListaDeAlumnos()
+        public List<Alumnos> CargarListaDeAlumnos(string buscarText = null)
         {
             //una lista vacia que va a contener toda la informacion de los alumnos de la base de datos
             List<Alumnos> listaAlumnos = new List<Alumnos>();
@@ -66,7 +67,19 @@ namespace animalesWinForms
             {
                 conexion.Open();
                 string query = @" SELECT id, nombre, apellido, dni, fecha_nac, provincia, ciudad, calle, numero_calle FROM Persona";
-                SqlCommand command = new SqlCommand(query, conexion);
+                SqlCommand command = new SqlCommand();
+
+                if (!string.IsNullOrEmpty(buscarText))
+                {
+                    query += @" WHERE dni LIKE @BuscarText OR nombre LIKE @BuscarText OR apellido LIKE @BuscarText OR fecha_nac LIKE @BuscarText OR
+                                provincia LIKE @BuscarText OR ciudad LIKE @BuscarText OR calle LIKE @BuscarText OR numero_calle LIKE @BuscarText ";
+
+                    command.Parameters.Add(new SqlParameter("@BuscarText", $"%{buscarText}%"));
+                }
+
+                command.CommandText = query;
+                command.Connection = conexion;
+
                 //contiene todas las lineas de los registros existentes
                 SqlDataReader reader = command.ExecuteReader();
                 //itera leyendo cada linea
@@ -104,30 +117,34 @@ namespace animalesWinForms
                 conexion.Open();
 
                 string query = @"
-                                    UPDATE Persona SET 
-                                    nombre = @Nombre
-                                    apellido = @Apellido
-                                    dni = @Dni
-                                    fecha_nac = @Fecha_nacimiento
-                                    provincia = @Provincia  
-                                    ciudad = @Ciudad
-                                    calle = @Calle
+                                    UPDATE Persona SET
+                                    nombre = @Nombre,
+                                    apellido = @Apellido,
+                                    dni = @Dni,
+                                    fecha_nac = @Fecha_nacimiento,
+                                    provincia = @Provincia,
+                                    ciudad = @Ciudad,
+                                    calle = @Calle,
                                     numero_calle = @Numero_calle
-                                    WHERE id = @Id
-                                    ";
+                                    WHERE ID = @Id";
 
-                SqlParameter id = new SqlParameter("@Id", alumno.Id);
+                SqlParameter Id = new SqlParameter("@Id", alumno.Id);
                 SqlParameter nombre = new SqlParameter("@Nombre", alumno.Nombre);
                 SqlParameter apellido = new SqlParameter("@Apellido", alumno.Apellido);
                 SqlParameter dni = new SqlParameter("@Dni", alumno.Dni);
-                SqlParameter fecha_nacimiento = new SqlParameter("@Fecha_nacimiento", alumno.Fecha_nacimiento);
                 SqlParameter provincia = new SqlParameter("@Provincia", alumno.Provincia);
                 SqlParameter ciudad = new SqlParameter("@Ciudad", alumno.Ciudad);
                 SqlParameter calle = new SqlParameter("@Calle", alumno.Calle);
                 SqlParameter numero_calle = new SqlParameter("@Numero_Calle", alumno.Numero_calle);
 
+                SqlParameter fecha_nacimiento = new SqlParameter();
+                fecha_nacimiento.ParameterName = "@Fecha_nacimiento";
+                fecha_nacimiento.Value = alumno.Fecha_nacimiento;
+                fecha_nacimiento.DbType = System.Data.DbType.DateTime2;
+
 
                 SqlCommand command = new SqlCommand(query, conexion);
+                command.Parameters.Add(Id);
                 command.Parameters.Add(nombre);
                 command.Parameters.Add(apellido);
                 command.Parameters.Add(dni);
@@ -145,6 +162,27 @@ namespace animalesWinForms
             }
             finally
             {
+                conexion.Close();
+            }
+        }
+        public void BorrarAlumno(int Id)
+        {
+            try
+            {
+                conexion.Open();
+                string query = "DELETE PERSONA WHERE Id = @Id";
+
+                SqlCommand command = new SqlCommand(query, conexion);
+                command.Parameters.Add(new SqlParameter ("@Id", Id));
+
+                command.ExecuteNonQuery();
+            }
+            catch(Exception)
+            {
+                throw;
+            }
+            finally 
+            { 
                 conexion.Close();
             }
         }

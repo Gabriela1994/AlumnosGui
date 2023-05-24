@@ -34,12 +34,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textnombre = new System.Windows.Forms.TextBox();
             this.textapellido = new System.Windows.Forms.TextBox();
-            this.texfechanac = new System.Windows.Forms.TextBox();
+            this.textnombre = new System.Windows.Forms.TextBox();
+            this.textcalle = new System.Windows.Forms.TextBox();
             this.textprovincia = new System.Windows.Forms.TextBox();
             this.textciudad = new System.Windows.Forms.TextBox();
-            this.textcalle = new System.Windows.Forms.TextBox();
+            this.textfechanac = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btncancel = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
@@ -116,60 +116,60 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Ciudad";
             // 
-            // textnombre
-            // 
-            this.textnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textnombre.Location = new System.Drawing.Point(339, 124);
-            this.textnombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textnombre.Name = "textnombre";
-            this.textnombre.Size = new System.Drawing.Size(204, 34);
-            this.textnombre.TabIndex = 9;
-            this.textnombre.TextChanged += new System.EventHandler(this.textdni_TextChanged);
-            // 
             // textapellido
             // 
             this.textapellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textapellido.Location = new System.Drawing.Point(339, 193);
-            this.textapellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textapellido.Location = new System.Drawing.Point(340, 193);
+            this.textapellido.Margin = new System.Windows.Forms.Padding(4);
             this.textapellido.Name = "textapellido";
             this.textapellido.Size = new System.Drawing.Size(204, 34);
-            this.textapellido.TabIndex = 10;
+            this.textapellido.TabIndex = 3;
+            this.textapellido.TextChanged += new System.EventHandler(this.textdni_TextChanged);
             // 
-            // texfechanac
+            // textnombre
             // 
-            this.texfechanac.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.texfechanac.Location = new System.Drawing.Point(339, 266);
-            this.texfechanac.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.texfechanac.Name = "texfechanac";
-            this.texfechanac.Size = new System.Drawing.Size(204, 34);
-            this.texfechanac.TabIndex = 11;
-            // 
-            // textprovincia
-            // 
-            this.textprovincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textprovincia.Location = new System.Drawing.Point(883, 62);
-            this.textprovincia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textprovincia.Name = "textprovincia";
-            this.textprovincia.Size = new System.Drawing.Size(204, 34);
-            this.textprovincia.TabIndex = 12;
-            // 
-            // textciudad
-            // 
-            this.textciudad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textciudad.Location = new System.Drawing.Point(883, 124);
-            this.textciudad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textciudad.Name = "textciudad";
-            this.textciudad.Size = new System.Drawing.Size(204, 34);
-            this.textciudad.TabIndex = 13;
+            this.textnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textnombre.Location = new System.Drawing.Point(340, 124);
+            this.textnombre.Margin = new System.Windows.Forms.Padding(4);
+            this.textnombre.Name = "textnombre";
+            this.textnombre.Size = new System.Drawing.Size(204, 34);
+            this.textnombre.TabIndex = 2;
             // 
             // textcalle
             // 
             this.textcalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textcalle.Location = new System.Drawing.Point(883, 193);
-            this.textcalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textcalle.Margin = new System.Windows.Forms.Padding(4);
             this.textcalle.Name = "textcalle";
             this.textcalle.Size = new System.Drawing.Size(204, 34);
-            this.textcalle.TabIndex = 14;
+            this.textcalle.TabIndex = 7;
+            // 
+            // textprovincia
+            // 
+            this.textprovincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textprovincia.Location = new System.Drawing.Point(883, 62);
+            this.textprovincia.Margin = new System.Windows.Forms.Padding(4);
+            this.textprovincia.Name = "textprovincia";
+            this.textprovincia.Size = new System.Drawing.Size(204, 34);
+            this.textprovincia.TabIndex = 5;
+            // 
+            // textciudad
+            // 
+            this.textciudad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textciudad.Location = new System.Drawing.Point(883, 124);
+            this.textciudad.Margin = new System.Windows.Forms.Padding(4);
+            this.textciudad.Name = "textciudad";
+            this.textciudad.Size = new System.Drawing.Size(204, 34);
+            this.textciudad.TabIndex = 6;
+            // 
+            // textfechanac
+            // 
+            this.textfechanac.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textfechanac.Location = new System.Drawing.Point(340, 266);
+            this.textfechanac.Margin = new System.Windows.Forms.Padding(4);
+            this.textfechanac.Name = "textfechanac";
+            this.textfechanac.Size = new System.Drawing.Size(204, 34);
+            this.textfechanac.TabIndex = 4;
             // 
             // label6
             // 
@@ -186,10 +186,10 @@
             // 
             this.btncancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncancel.Location = new System.Drawing.Point(591, 394);
-            this.btncancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btncancel.Margin = new System.Windows.Forms.Padding(4);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(113, 34);
-            this.btncancel.TabIndex = 17;
+            this.btncancel.TabIndex = 10;
             this.btncancel.Text = "Cancelar";
             this.btncancel.UseVisualStyleBackColor = true;
             this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
@@ -198,10 +198,10 @@
             // 
             this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsave.Location = new System.Drawing.Point(428, 394);
-            this.btnsave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnsave.Margin = new System.Windows.Forms.Padding(4);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(113, 34);
-            this.btnsave.TabIndex = 18;
+            this.btnsave.TabIndex = 9;
             this.btnsave.Text = "Guardar";
             this.btnsave.UseVisualStyleBackColor = true;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
@@ -221,21 +221,21 @@
             // textnumcalle
             // 
             this.textnumcalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textnumcalle.Location = new System.Drawing.Point(883, 263);
-            this.textnumcalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textnumcalle.Location = new System.Drawing.Point(883, 266);
+            this.textnumcalle.Margin = new System.Windows.Forms.Padding(4);
             this.textnumcalle.Name = "textnumcalle";
             this.textnumcalle.Size = new System.Drawing.Size(204, 34);
-            this.textnumcalle.TabIndex = 20;
+            this.textnumcalle.TabIndex = 8;
             this.textnumcalle.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // textdni
             // 
             this.textdni.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textdni.Location = new System.Drawing.Point(339, 62);
+            this.textdni.Location = new System.Drawing.Point(340, 59);
             this.textdni.Margin = new System.Windows.Forms.Padding(4);
             this.textdni.Name = "textdni";
             this.textdni.Size = new System.Drawing.Size(204, 34);
-            this.textdni.TabIndex = 8;
+            this.textdni.TabIndex = 1;
             // 
             // CargarAlumnos
             // 
@@ -247,12 +247,12 @@
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.btncancel);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textcalle);
+            this.Controls.Add(this.textfechanac);
             this.Controls.Add(this.textciudad);
             this.Controls.Add(this.textprovincia);
-            this.Controls.Add(this.texfechanac);
-            this.Controls.Add(this.textapellido);
+            this.Controls.Add(this.textcalle);
             this.Controls.Add(this.textnombre);
+            this.Controls.Add(this.textapellido);
             this.Controls.Add(this.textdni);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
@@ -260,7 +260,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CargarAlumnos";
             this.Text = "Alumnos";
             this.Load += new System.EventHandler(this.CargarAlumnos_Load);
@@ -277,12 +277,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textnombre;
         private System.Windows.Forms.TextBox textapellido;
-        private System.Windows.Forms.TextBox texfechanac;
+        private System.Windows.Forms.TextBox textnombre;
+        private System.Windows.Forms.TextBox textcalle;
         private System.Windows.Forms.TextBox textprovincia;
         private System.Windows.Forms.TextBox textciudad;
-        private System.Windows.Forms.TextBox textcalle;
+        private System.Windows.Forms.TextBox textfechanac;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btncancel;
         private System.Windows.Forms.Button btnsave;

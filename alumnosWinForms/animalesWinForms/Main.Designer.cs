@@ -30,11 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.gridAnimales = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TxtSearch = new System.Windows.Forms.TextBox();
-            this.btnsearch = new System.Windows.Forms.Button();
-            this.btncreate = new System.Windows.Forms.Button();
-            this.alumnosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dniDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +41,11 @@
             this.numerocalleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Editar = new System.Windows.Forms.DataGridViewLinkColumn();
             this.Eliminar = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.alumnosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.TxtSearch = new System.Windows.Forms.TextBox();
+            this.btnsearch = new System.Windows.Forms.Button();
+            this.btncreate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridAnimales)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.alumnosBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -74,55 +74,6 @@
             this.gridAnimales.Size = new System.Drawing.Size(1005, 354);
             this.gridAnimales.TabIndex = 0;
             this.gridAnimales.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(59, 53);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 31);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Buscar";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // TxtSearch
-            // 
-            this.TxtSearch.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSearch.Location = new System.Drawing.Point(164, 49);
-            this.TxtSearch.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtSearch.Name = "TxtSearch";
-            this.TxtSearch.Size = new System.Drawing.Size(561, 39);
-            this.TxtSearch.TabIndex = 2;
-            this.TxtSearch.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // btnsearch
-            // 
-            this.btnsearch.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsearch.Location = new System.Drawing.Point(769, 49);
-            this.btnsearch.Margin = new System.Windows.Forms.Padding(4);
-            this.btnsearch.Name = "btnsearch";
-            this.btnsearch.Size = new System.Drawing.Size(121, 43);
-            this.btnsearch.TabIndex = 3;
-            this.btnsearch.Text = "Buscar";
-            this.btnsearch.UseVisualStyleBackColor = true;
-            // 
-            // btncreate
-            // 
-            this.btncreate.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncreate.Location = new System.Drawing.Point(913, 49);
-            this.btncreate.Margin = new System.Windows.Forms.Padding(4);
-            this.btncreate.Name = "btncreate";
-            this.btncreate.Size = new System.Drawing.Size(120, 43);
-            this.btncreate.TabIndex = 4;
-            this.btncreate.Text = "Crear";
-            this.btncreate.UseVisualStyleBackColor = true;
-            this.btncreate.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // alumnosBindingSource
-            // 
-            this.alumnosBindingSource.DataSource = typeof(animalesWinForms.Alumnos);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -214,6 +165,56 @@
             this.Eliminar.Text = "Eliminar";
             this.Eliminar.UseColumnTextForLinkValue = true;
             this.Eliminar.Width = 80;
+            // 
+            // alumnosBindingSource
+            // 
+            this.alumnosBindingSource.DataSource = typeof(animalesWinForms.Alumnos);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(59, 53);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 31);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Buscar";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // TxtSearch
+            // 
+            this.TxtSearch.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSearch.Location = new System.Drawing.Point(164, 49);
+            this.TxtSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtSearch.Name = "TxtSearch";
+            this.TxtSearch.Size = new System.Drawing.Size(561, 39);
+            this.TxtSearch.TabIndex = 2;
+            this.TxtSearch.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // btnsearch
+            // 
+            this.btnsearch.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsearch.Location = new System.Drawing.Point(769, 49);
+            this.btnsearch.Margin = new System.Windows.Forms.Padding(4);
+            this.btnsearch.Name = "btnsearch";
+            this.btnsearch.Size = new System.Drawing.Size(121, 43);
+            this.btnsearch.TabIndex = 3;
+            this.btnsearch.Text = "Buscar";
+            this.btnsearch.UseVisualStyleBackColor = true;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
+            // 
+            // btncreate
+            // 
+            this.btncreate.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncreate.Location = new System.Drawing.Point(913, 49);
+            this.btncreate.Margin = new System.Windows.Forms.Padding(4);
+            this.btncreate.Name = "btncreate";
+            this.btncreate.Size = new System.Drawing.Size(120, 43);
+            this.btncreate.TabIndex = 4;
+            this.btncreate.Text = "Crear";
+            this.btncreate.UseVisualStyleBackColor = true;
+            this.btncreate.Click += new System.EventHandler(this.button1_Click);
             // 
             // Main
             // 

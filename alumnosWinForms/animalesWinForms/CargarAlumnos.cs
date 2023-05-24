@@ -64,7 +64,7 @@ namespace animalesWinForms
             alumno.Dni = textdni.Text;
             alumno.Nombre = textnombre.Text;
             alumno.Apellido = textapellido.Text;
-            alumno.Fecha_nacimiento = texfechanac.Text;
+            alumno.Fecha_nacimiento = textfechanac.Text;
             alumno.Provincia = textprovincia.Text;
             alumno.Ciudad = textciudad.Text;
             alumno.Calle = textcalle.Text;
@@ -82,11 +82,10 @@ namespace animalesWinForms
             if (alumno != null)
             {
                 LimpiarFormulario();
-
                 textdni.Text = alumno.Dni;
                 textnombre.Text = alumno.Nombre;
                 textapellido.Text = alumno.Apellido;
-                texfechanac.Text = alumno.Fecha_nacimiento;
+                textfechanac.Text = alumno.Fecha_nacimiento;
                 textprovincia.Text = alumno.Provincia;
                 textciudad.Text = alumno.Ciudad;
                 textcalle.Text = alumno.Calle;
@@ -97,12 +96,12 @@ namespace animalesWinForms
         private void LimpiarFormulario()
         {
             textdni.Text = string.Empty;
-            textnombre.Text = string.Empty;
             textapellido.Text = string.Empty;
-            texfechanac.Text = string.Empty;
+            textnombre.Text = string.Empty;
+            textcalle.Text = string.Empty;
             textprovincia.Text = string.Empty;
             textciudad.Text = string.Empty;
-            textcalle.Text = string.Empty;
+            textfechanac.Text = string.Empty;
             textnumcalle.Text = string.Empty;
         }
         private void textdni_TextChanged(object sender, EventArgs e)
